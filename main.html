@@ -6,29 +6,30 @@
 <body>
 	<h1>Internship Form</h1>
      <form>
-           <label>First Name</label>
+           <label for="first-name-input">First Name</label>
 		 <input type="text" id="first-name-input" placeholder="First Name" required>
          <div class="invalid-feedback">Please enter your first name.</div>
 
-		  <label>Last Name</label>
+		  <label for="last-name-input">Last Name</label>
 		 <input type="text" id="last-name-input" placeholder="Last Name" required>
          <div class="invalid-feedback">Please enter your last name.</div>
 
-		  <label>Email</label>
+		  <label for="email-input">Email</label>
 		 <input type="email" id="email-input" placeholder="Email" required>
          <div class="invalid-feedback">Please enter a valid email.</div>
 
-		  <label>College Name</label>
+		  <label for="college-input">College Name</label>
 		 <input type="text" id="college-input" placeholder="College Name" required>
          <div class="invalid-feedback">Please enter your college name.</div>
 
-		 <label>Graduation Year</label>
-		 <select>
+		 <label for="graduation-year" class="form-label">Graduation Year</label>
+		 <select id="graduation-year" class="form-control" required>
 			 <option>2020</option>
 			  <option>2021</option>
 			  <option>2022</option>
 			  <option>2023</option>
 		 </select>
+		  <div class="invalid-feedback">Please select your graduation year.</div>
 
 		  <label>Roll no</label>
 		 <input type="text" id="roll-no-input" placeholder="Roll no">
